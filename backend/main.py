@@ -155,22 +155,31 @@ async def lifespan(app: FastAPI):
     await init_db()
     print("✅ Database tayyor")
 
-    # Telegram bot ni ishga tushirish
-    bot = create_bot()
-    if bot:
-        await bot.initialize()
-        await bot.start()
-        await bot.updater.start_polling(drop_pending_updates=True)
-        print("✅ Telegram bot ishga tushdi")
+    # Telegram bot ni ishga tushirish (xato bo'lsa ham API ishlayveradi)
+    bot_started = False
+    try:
+        bot = create_bot()
+        if bot:
+            await bot.initialize()
+            await bot.start()
+            await bot.updater.start_polling(drop_pending_updates=True)
+            bot_started = True
+            print("✅ Telegram bot ishga tushdi")
+    except Exception as e:
+        print(f"⚠️  Telegram bot ishga tushmadi: {e}")
+        print("   API server botsiz ishlaydi.")
 
     yield
 
     # Shutdown
-    if bot_app:
-        print("⏹ Telegram bot to'xtatilmoqda...")
-        await bot_app.updater.stop()
-        await bot_app.stop()
-        await bot_app.shutdown()
+    if bot_started and bot_app:
+        try:
+            print("⏹ Telegram bot to'xtatilmoqda...")
+            await bot_app.updater.stop()
+            await bot_app.stop()
+            await bot_app.shutdown()
+        except Exception as e:
+            print(f"⚠️  Bot to'xtatishda xato: {e}")
 
     print("👋 ToyMix Backend to'xtatildi")
 
