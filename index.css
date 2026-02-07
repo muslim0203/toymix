@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* Custom Theme Variables */
+@theme {
+  --color-toy-red: #FF6B6B;
+  --color-toy-blue: #4D96FF;
+  --color-toy-yellow: #FFD93D;
+  --color-toy-bg: #F7F9FC;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--color-toy-bg);
+  color: #2d3436;
+}
+
+/* Custom Utilities */
+.toy-shadow {
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.04), 0 8px 16px -4px rgba(0, 0, 0, 0.04);
+}
+
+.toy-bounce {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toy-bounce:hover {
+  transform: scale(1.05);
+}
+
+.toy-bounce:active {
+  transform: scale(0.95);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Screen Reader Only - for SEO hidden headings */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(1deg); }
+  50% { transform: translateY(-10px) rotate(-1deg); }
+  100% { transform: translateY(0px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Gradients */
+.gradient-main {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, #4D96FF 0%, #6BA5FF 100%);
+}
+
+/* Sticky Add to Cart */
+.sticky-add-to-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  z-index: 50;
+  border-top: 1px solid #eee;
+}
+
+/* Toast Animations */
+@keyframes toast-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.toast-enter {
+  animation: toast-in 0.3s ease-out forwards;
+}
+
+.toast-exit {
+  animation: toast-out 0.3s ease-in forwards;
+}

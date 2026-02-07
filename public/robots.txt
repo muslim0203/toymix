@@ -1,0 +1,30 @@
+# ToyMix - Bolalar O'yinchoqlari Do'koni
+# https://toymix-14889.web.app
+
+User-agent: *
+Allow: /
+Allow: /catalog
+Allow: /blog
+Allow: /about
+Allow: /delivery
+
+# Private pages - do not index
+Disallow: /checkout
+Disallow: /profile
+Disallow: /login
+
+# Sitemap
+Sitemap: https://toymix-14889.web.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Yandex (popular in Uzbekistan)
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1

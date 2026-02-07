@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://toymix-14889.web.app/</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&amp;fit=crop&amp;q=80&amp;w=600</image:loc>
+      <image:title>ToyMix - Bolalar O'yinchoqlari</image:title>
+    </image:image>
+  </url>
+
+  <!-- Catalog -->
+  <url>
+    <loc>https://toymix-14889.web.app/catalog</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://toymix-14889.web.app/blog</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://toymix-14889.web.app/about</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Delivery -->
+  <url>
+    <loc>https://toymix-14889.web.app/delivery</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Product: Magnitli Konstruktor -->
+  <url>
+    <loc>https://toymix-14889.web.app/product/magnitli-konstruktor-100</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&amp;fit=crop&amp;q=80&amp;w=600</image:loc>
+      <image:title>Magnitli Konstruktor 100 dona</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Gapiradigan Ayiqcha -->
+  <url>
+    <loc>https://toymix-14889.web.app/product/gapiradigan-ayiqcha-teddy</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1559440666-3f945637b0c4?auto=format&amp;fit=crop&amp;q=80&amp;w=600</image:loc>
+      <image:title>Gapiradigan Ayiqcha Teddy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Robot-Panda -->
+  <url>
+    <loc>https://toymix-14889.web.app/product/robot-panda-aqlli-hamroh</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1531608139434-1912ae0713cd?auto=format&amp;fit=crop&amp;q=80&amp;w=600</image:loc>
+      <image:title>Robot-Panda Aqlli Hamroh</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Lego City -->
+  <url>
+    <loc>https://toymix-14889.web.app/product/lego-city-politsiya-markazi</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584447128309-b66b7a4d1b63?auto=format&amp;fit=crop&amp;q=80&amp;w=600</image:loc>
+      <image:title>Lego City Politsiya Markazi</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Barbie Orzuidagi Uy -->
+  <url>
+    <loc>https://toymix-14889.web.app/product/barbie-orzuidagi-uy</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&amp;fit=crop&amp;q=80&amp;w=600</image:loc>
+      <image:title>Barbie Orzuidagi Uy</image:title>
+    </image:image>
+  </url>
+
+</urlset>

@@ -1,0 +1,8 @@
+{
+  "name": "ToyMix - Bolalar O'yinchoqlari Do'koni",
+  "description": "ToyMix - bolalar uchun eng sara o'yinchoqlar, ta'limiy o'yinlar va quvonch ulashuvchi mahsulotlar platformasi. Sun'iy intellekt yordamchisi bilan farzandingiz uchun eng mos sovg'ani tanlang.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

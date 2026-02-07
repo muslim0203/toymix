@@ -1,0 +1,20 @@
+{
+  "name": "ToyMix - Bolalar O'yinchoqlari Do'koni",
+  "short_name": "ToyMix",
+  "description": "O'zbekistondagi eng yaxshi bolalar o'yinchoqlari onlayn do'koni. Sifatli, xavfsiz va ta'limiy o'yinchoqlar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F9FC",
+  "theme_color": "#FF6B6B",
+  "orientation": "portrait-primary",
+  "lang": "uz",
+  "categories": ["shopping", "kids", "education"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
