@@ -26,7 +26,8 @@ if _raw_ids.strip():
 
 # ─── API Server ──────────────────────────────────────────────────────────────
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
-API_PORT = int(os.getenv("API_PORT", "8000"))
+# Railway PORT env variable ni ham qabul qiladi
+API_PORT = int(os.getenv("PORT", os.getenv("API_PORT", "8000")))
 
 # ─── Database ────────────────────────────────────────────────────────────────
 DATABASE_PATH = os.getenv("DATABASE_PATH", "toymix.db")
